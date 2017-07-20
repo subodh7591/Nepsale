@@ -1,0 +1,31 @@
+
+{% extends 'category/base.html' %}
+
+
+{% block body %}
+
+<h1> Categories</h1>
+
+<container>
+
+   <li><a href="/tac/">Computer,Laptops and Gamming</a></li>
+   <li><a href="/category/2/">TVs,Appliances and Camera</a></li>
+   <li><a href="/category/3/">Jewlery and Watches</a></li>
+   <li><a href="/category/4/">Mobiles Tablets</a></li>
+   <li><a href="/category/5/">Men's Fashion</a></li>
+   <li><a href="/category/6/">Women's Fashion</a></li>
+   <li><a href="/category/7/">Auto Mobiles</a></li>
+   <li><a href="/category/8/">Property</a></li>
+
+</container>
+
+{% endblock %}
+
+
+<container>
+    <ul>
+        {%  for item in all_items %}
+        <li> <a href="/tac/{{ item.id }}">{{ item.item_name}}</a></li>
+        {% endfor %}
+    </ul>
+</container>

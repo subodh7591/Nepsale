@@ -1,0 +1,16 @@
+{% extends 'category/base.html' %}
+{% block title %}Telvison,Appliances and and camera {% endblock %}
+{% block body %}
+
+<img src ="{{ item.item_logo.url }}">
+
+<h1>{{ item.item_name }}</h1>
+<h3>{{ item.item_price}}</h3>
+<h3>{{ item.item_status }}</h3>
+
+{% endblock %}
+
+
+
+
+
